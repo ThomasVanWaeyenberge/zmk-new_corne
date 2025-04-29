@@ -15,19 +15,19 @@ layers:
   - P
   - '&bl BL_TOG'
   - $$mdi:apple-keyboard-shift$$
-  - A
-  - S
-  - D
-  - F
+  - '&hml LCTRL'
+  - '&hml LALT'
+  - '&hml LSHIFT'
+  - '&hml LGUI'
   - G
   - {t: '$$mdi:transfer$$', type: trans}
   - '&bl BL_TOG'
   - {t: '$$mdi:transfer$$', type: trans}
   - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
+  - '&hmr LGUI'
+  - '&hmr RSHIFT'
+  - '&hmr RALT'
+  - '&hmr RCTRL'
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-caps$$
   - Z
