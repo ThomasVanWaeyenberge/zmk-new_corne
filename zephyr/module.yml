@@ -1,4 +1,3 @@
 build:
-  # no boards or shields live here – keep BOARD_ROOT clean
   settings:
-    board_root: ""
+    board_root: .

@@ -1,27 +1,22 @@
----
-  include:
-    # ───────────────────────────────────────────────────────────────
-    # normal right half
-    # ───────────────────────────────────────────────────────────────
-    - board: eyelash_corne_right
-      shield: nice_view                     # no extra cmake-args needed
-                                            # (-DZMK_EXTRA_MODULES is already
-                                            #  injected by the workflow)
-  
-    # ───────────────────────────────────────────────────────────────
-    # normal left half — with ZMK-Studio telemetry
-    # ───────────────────────────────────────────────────────────────
-    - board: eyelash_corne_left
-      shield: nice_view
-      snippet: studio-rpc-usb-uart
-      cmake-args: >
-        -DCONFIG_ZMK_STUDIO=y
-        -DCONFIG_ZMK_STUDIO_LOCKING=n       # module path comes from workflow
-      artifact-name: eyelash_corne_studio_left
-  
-    # ───────────────────────────────────────────────────────────────
-    # “settings-reset” image (clears persistent settings)
-    # ───────────────────────────────────────────────────────────────
-    - board: eyelash_corne_left
-      shield: settings_reset                # no extra cmake-args needed
-  
+name: Build ZMK firmware
+
+on:
+  # run on demand …
+  workflow_dispatch:
+  # … or whenever anything except the keymap-drawer artefacts changes
+  push:
+    paths-ignore:
+      - "keymap-drawer/**"
+
+jobs:
+  build:
+    # Re-use ZMK’s official workflow
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+
+    # ───────────── optional but explicit ─────────────
+    # the defaults are already “build.yaml” and “config”,
+    # but it’s clearer (and future-proof) to wire them up:
+    with:
+      build_matrix_path: build.yaml   # matrix that lists all boards to build
+      config_path:       config       # your ZMK config folder
+      archive_name:      firmware     # final artefact name (zip)
