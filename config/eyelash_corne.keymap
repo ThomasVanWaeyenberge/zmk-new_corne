@@ -10,6 +10,9 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
+#include "hrm.dtsi"
+#include "homerow-aliases.dtsi"
+
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
@@ -57,7 +60,7 @@
             display-name = "QWERTY";
             bindings = <
 &out OUT_TOG    &kp Q  &kp W  &kp E         &kp R      &kp T                           &bl BL_INC          &kp Y            &kp U      &kp I         &kp O    &kp P     &bl BL_TOG
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D         &kp F      &kp G                   &trans  &bl BL_TOG  &trans  &kp H            &kp J      &kp K         &kp L    &kp SEMI  &kp RIGHT_SHIFT
+&kp LEFT_SHIFT  HRM_A  HRM_S  HRM_D         HRM_F       &kp G                   &trans &bl BL_TOG &trans   &kp H            HRM_J      HRM_K         HRM_L    HRM_SCLN  &kp RIGHT_SHIFT
 &kp CAPSLOCK    &kp Z  &kp X  &kp C         &kp V      &kp B      &kp SPACE            &bl BL_DEC          &kp N            &kp M      &kp COMMA     &kp DOT  &kp FSLH  &sys_reset
                               &lt 1 ESCAPE  &kp SPACE  &lt 2 TAB                                           &lt 2 BACKSPACE  &kp ENTER  &lt 1 DELETE
             >;

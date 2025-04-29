@@ -1,0 +1,10 @@
+/* eight tiny aliases: tap = letter, hold = modifier */
+#define HRM_A     &hml LCTRL
+#define HRM_S     &hml LALT
+#define HRM_D     &hml LSHIFT
+#define HRM_F     &hml LGUI
+
+#define HRM_J     &hmr LGUI       /* right-side Command */
+#define HRM_K     &hmr RSHIFT
+#define HRM_L     &hmr RALT
+#define HRM_SCLN  &hmr RCTRL      /* semicolon */

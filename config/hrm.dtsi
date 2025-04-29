@@ -1,0 +1,31 @@
+/* config/hrm.dtsi — timeless HRM definitions  */
+#include "zmk-helpers/helper.h"          /* macros from urob/zmk-helpers   */
+
+/* key-position labels that match the Eyelash-Corne generator --------- */
+/* If you ran `zmk-helpers gen-key-labels`, the file name will be       */
+/*   zmk-helpers/key-labels/eyelash_corne.h                             */
+/* Adjust the include line if you named it differently.                 */
+#include "zmk-helpers/key-labels/eyelash_corne.h"
+
+/* Same-hand positions for the positional guard ----------------------- */
+#define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4
+#define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4
+#define THUMBS  LH2 LH1 LH0 RH0 RH1 RH2   /* adjust to taste */
+
+/* One-liner that spits out the behaviour node: */
+#define MAKE_HRM(name) \
+  ZMK_HOLD_TAP(name,                                          \
+      flavor = "balanced";                                    \
+      tapping-term-ms = <280>;                                \
+      quick-tap-ms = <175>;                                   \
+      require-prior-idle-ms = <150>;                          \
+      hold-trigger-on-release;                                \
+      bindings = <&kp>, <&kp>;)
+
+/* Two concrete behaviours ------------------------------------------- */
+MAKE_HRM(hml)   /* „home-row-mod left“  */
+MAKE_HRM(hmr)   /* „home-row-mod right“ */
+
+/* Positional guard: only opposite-hand (or thumb) keys can trigger hold */
+&hml { hold-trigger-key-positions = <KEYS_R THUMBS>; };
+&hmr { hold-trigger-key-positions = <KEYS_L THUMBS>; };
