@@ -20,3 +20,4 @@ jobs:
       build_matrix_path: build.yaml   # matrix that lists all boards to build
       config_path:       config       # your ZMK config folder
       archive_name:      firmware     # final artefact name (zip)
+      extra_module_paths: zmk_helpers
