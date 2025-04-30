@@ -44,7 +44,7 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:bluetooth-off$$
   - {t: '$$mdi:keyboard-esc$$', h: Numbers}
-  - {t: '$$mdi:keyboard-space$$', h: nav}
+  - {t: '$$mdi:keyboard-space$$', h: NAV}
   - {t: '$$mdi:keyboard-tab$$', h: SYMBOLS}
   - {t: '$$mdi:backspace$$', h: SYMBOLS}
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -103,11 +103,11 @@ layers:
   - Q
   - W
   - E
-  - R
-  - T
+  - '#'
+  - (
   - RGB BRI
-  - Y
-  - U
+  - )
+  - +
   - I
   - O
   - P
@@ -116,13 +116,13 @@ layers:
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-command$$'}
-  - G
+  - '!'
+  - '{'
   - RGB EFR
   - RGB TOG
   - RGB EFF
-  - H
-  - {t: J, h: RIGHT GUI}
+  - '}'
+  - $
   - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
@@ -132,11 +132,11 @@ layers:
   - X
   - C
   - V
-  - B
+  - {t: '[', s: '{'}
   - $$mdi:keyboard-space$$
   - RGB BRD
-  - N
-  - M
+  - {t: ']', s: '}'}
+  - '%'
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
@@ -147,7 +147,7 @@ layers:
   - {t: '$$mdi:backspace$$', h: SYMBOLS, type: held alternate}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace-reverse-outline$$', h: Numbers, type: held alternate}
-  nav:
+  NAV:
   - '~'
   - Q
   - W
@@ -156,8 +156,8 @@ layers:
   - T
   - RGB BRI
   - PgUp
+  - HOME
   - END
-  - $$mdi:arrow-up-bold$$
   - MUTE
   - $$mdi:volume-high$$
   - $$mdi:brightness-5$$
@@ -170,9 +170,9 @@ layers:
   - RGB EFR
   - RGB TOG
   - RGB EFF
-  - HOME
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - PLAY PAUSE
   - SLEEP
