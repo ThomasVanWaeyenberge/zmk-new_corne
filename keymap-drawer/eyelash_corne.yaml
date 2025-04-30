@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
-  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - RGB TOG
   - Q
   - W
   - E
@@ -13,21 +13,21 @@ layers:
   - I
   - O
   - P
-  - '&bl BL_TOG'
+  - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - $$mdi:apple-keyboard-shift$$
-  - A
-  - S
-  - D
-  - F
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-command$$'}
   - G
   - {t: '$$mdi:transfer$$', type: trans}
   - '&bl BL_TOG'
   - {t: '$$mdi:transfer$$', type: trans}
   - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
+  - {t: J, h: RIGHT GUI}
+  - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-caps$$
   - Z
@@ -42,7 +42,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - $$mdi:bluetooth-off$$
   - {t: '$$mdi:keyboard-esc$$', h: NUMBER}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-tab$$', h: SYMBOL}
