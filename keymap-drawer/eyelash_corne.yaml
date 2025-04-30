@@ -1,13 +1,13 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
-  - RGB TOG
+  - '~'
   - Q
   - W
   - E
   - R
   - T
-  - '&bl BL_INC'
+  - RGB BRI
   - Y
   - U
   - I
@@ -20,9 +20,9 @@ layers:
   - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: F, h: '$$mdi:apple-keyboard-command$$'}
   - G
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&bl BL_TOG'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - RGB EFR
+  - RGB TOG
+  - RGB EFF
   - H
   - {t: J, h: RIGHT GUI}
   - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
@@ -36,47 +36,47 @@ layers:
   - V
   - B
   - $$mdi:keyboard-space$$
-  - '&bl BL_DEC'
+  - RGB BRD
   - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:bluetooth-off$$
-  - {t: '$$mdi:keyboard-esc$$', h: NUMBER}
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-tab$$', h: SYMBOL}
-  - {t: '$$mdi:backspace$$', h: SYMBOL}
+  - {t: '$$mdi:keyboard-esc$$', h: Numbers}
+  - {t: '$$mdi:keyboard-space$$', h: nav}
+  - {t: '$$mdi:keyboard-tab$$', h: SYMBOLS}
+  - {t: '$$mdi:backspace$$', h: SYMBOLS}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: NUMBER}
-  NUMBER:
-  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: Numbers}
+  Numbers:
+  - '~'
   - Q
   - W
   - E
   - R
   - T
-  - '&bl BL_INC'
+  - RGB BRI
   - Y
-  - U
-  - I
-  - O
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
   - P
-  - '&bl BL_TOG'
+  - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - $$mdi:apple-keyboard-shift$$
-  - A
-  - S
-  - D
-  - F
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-command$$'}
   - G
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&bl BL_TOG'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - RGB EFR
+  - RGB TOG
+  - RGB EFF
   - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
+  - '4'
+  - {t: '5', s: '%'}
+  - '6'
+  - {t: '0', s: )}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-caps$$
   - Z
@@ -85,47 +85,47 @@ layers:
   - V
   - B
   - $$mdi:keyboard-space$$
-  - '&bl BL_DEC'
+  - RGB BRD
   - N
-  - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
+  - '1'
+  - '2'
+  - '3'
   - {t: /, s: '?'}
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - {t: '$$mdi:keyboard-esc$$', h: NUMBER, type: held}
+  - $$mdi:bluetooth-off$$
+  - {t: '$$mdi:keyboard-esc$$', h: Numbers, type: held}
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-tab$$', h: SYMBOL}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:keyboard-tab$$', h: SYMBOLS}
+  - {t: '$$mdi:backspace$$', h: SYMBOLS}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:backspace-reverse-outline$$', type: held alternate}
-  SYMBOL:
-  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: Numbers, type: held alternate}
+  SYMBOLS:
+  - '~'
   - Q
   - W
   - E
   - R
   - T
-  - '&bl BL_INC'
+  - RGB BRI
   - Y
   - U
   - I
   - O
   - P
-  - '&bl BL_TOG'
+  - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - $$mdi:apple-keyboard-shift$$
-  - A
-  - S
-  - D
-  - F
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-command$$'}
   - G
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&bl BL_TOG'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - RGB EFR
+  - RGB TOG
+  - RGB EFF
   - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
+  - {t: J, h: RIGHT GUI}
+  - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-caps$$
   - Z
@@ -134,16 +134,65 @@ layers:
   - V
   - B
   - $$mdi:keyboard-space$$
-  - '&bl BL_DEC'
+  - RGB BRD
   - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - {t: '$$mdi:keyboard-esc$$', h: NUMBER, type: held alternate}
+  - $$mdi:bluetooth-off$$
+  - {t: '$$mdi:keyboard-esc$$', h: Numbers, type: held alternate}
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-tab$$', h: SYMBOL, type: held}
-  - {t: '$$mdi:backspace$$', type: held alternate}
+  - {t: '$$mdi:keyboard-tab$$', h: SYMBOLS, type: held}
+  - {t: '$$mdi:backspace$$', h: SYMBOLS, type: held alternate}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:backspace-reverse-outline$$', type: held alternate}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: Numbers, type: held alternate}
+  nav:
+  - '~'
+  - Q
+  - W
+  - END
+  - R
+  - T
+  - RGB BRI
+  - PgUp
+  - END
+  - $$mdi:arrow-up-bold$$
+  - MUTE
+  - $$mdi:volume-high$$
+  - $$mdi:brightness-5$$
+  - $$mdi:apple-keyboard-shift$$
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-command$$'}
+  - G
+  - RGB EFR
+  - RGB TOG
+  - RGB EFF
+  - HOME
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
+  - PLAY PAUSE
+  - SLEEP
+  - $$mdi:apple-keyboard-caps$$
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - $$mdi:keyboard-space$$
+  - RGB BRD
+  - PgDn
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - PRINTSCREEN
+  - $$mdi:volume-low$$
+  - $$mdi:brightness-7$$
+  - {t: '$$mdi:keyboard-esc$$', h: Numbers}
+  - {t: '$$mdi:keyboard-space$$', type: held}
+  - {t: '$$mdi:keyboard-tab$$', h: SYMBOLS}
+  - {t: '$$mdi:backspace$$', h: SYMBOLS}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: Numbers}
