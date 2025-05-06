@@ -109,10 +109,10 @@
         layer_symbols {
             display-name = "SYMBOLS";
             bindings = <
-&kp TILDE       &kp Q                &kp W            &kp E              &kp HASH   &kp LEFT_PARENTHESIS                                &rgb_ug RGB_BRI                   &kp RIGHT_PARENTHESIS  &kp PLUS     &kp I               &kp O             &kp P                    &bt BT_NXT
-&kp LEFT_SHIFT  &hml LEFT_CONTROL A  &hml LEFT_ALT S  &hml LEFT_SHIFT D  &kp EXCL   &kp LEFT_BRACE                     &rgb_ug RGB_EFR  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &kp RIGHT_BRACE        &kp DOLLAR   &hmr RIGHT_SHIFT K  &hmr RIGHT_ALT L  &hmr RIGHT_CONTROL SEMI  &kp RIGHT_SHIFT
-&kp CAPSLOCK    &kp Z                &kp X            &kp C              &kp V      &kp LEFT_BRACKET      &kp SPACE                     &rgb_ug RGB_BRD                   &kp RIGHT_BRACKET      &kp PERCENT  &kp COMMA           &kp DOT           &kp FSLH                 &bt BT_CLR
-                                                      &lt 1 ESCAPE       &kp SPACE  &lt 2 TAB                                                                             &lt 2 BACKSPACE        &kp ENTER    &lt 1 DELETE
+&kp TILDE       &trans           &kp PIPE              &kp CARET     &kp PERCENT  &kp LEFT_PARENTHESIS                                &rgb_ug RGB_BRI                   &kp RIGHT_PARENTHESIS  &kp EQUAL       &kp PLUS      &kp AMPERSAND      &kp PIPE          &bt BT_NXT
+&kp LEFT_SHIFT  &kp EXCLAMATION  &kp AT_SIGN           &kp HASH      &kp DOLLAR   &kp LEFT_BRACE                     &rgb_ug RGB_EFR  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &kp RIGHT_BRACE        &kp MINUS       &kp ASTERISK  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp RIGHT_SHIFT
+&kp CAPSLOCK    &trans           &kp NON_US_BACKSLASH  &kp GRAVE     &kp TILDE    &kp LEFT_BRACKET      &kp SPACE                     &rgb_ug RGB_BRD                   &kp RIGHT_BRACKET      &kp UNDERSCORE  &kp COMMA     &kp DOT            &kp FSLH          &bt BT_CLR
+                                                       &lt 1 ESCAPE  &kp SPACE    &lt 2 TAB                                                                             &lt 2 BACKSPACE        &kp ENTER       &lt 1 DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp N2 N1>;
