@@ -100,43 +100,43 @@ layers:
   - {t: '$$mdi:backspace-reverse-outline$$', h: Numbers, type: held alternate}
   SYMBOLS:
   - '~'
-  - Q
-  - W
-  - E
-  - '#'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '|'
+  - ^
+  - '%'
   - (
   - RGB BRI
   - )
+  - {t: '=', s: +}
   - +
-  - I
-  - O
-  - P
+  - '&'
+  - '|'
   - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - $$mdi:apple-keyboard-shift$$
-  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
   - '!'
+  - '@'
+  - '#'
+  - $
   - '{'
   - RGB EFR
   - RGB TOG
   - RGB EFF
   - '}'
-  - $
-  - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
+  - {t: '-', s: _}
+  - '*'
+  - '"'
+  - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-caps$$
-  - Z
-  - X
-  - C
-  - V
+  - {t: '$$mdi:transfer$$', type: trans}
+  - \
+  - {t: '`', s: '~'}
+  - '~'
   - {t: '[', s: '{'}
   - $$mdi:keyboard-space$$
   - RGB BRD
   - {t: ']', s: '}'}
-  - '%'
+  - _
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
